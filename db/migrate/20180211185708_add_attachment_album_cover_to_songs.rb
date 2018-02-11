@@ -1,4 +1,4 @@
-class AddAttachmentAvatarToSongs < ActiveRecord::Migration
+class AddAttachmentAlbumCoverToSongs < ActiveRecord::Migration
   def self.up
     change_table :songs do |t|
       t.attachment :album_cover
