@@ -1,4 +1,6 @@
 <%= form_for @song, html: {multipart: true}  do |f| %>
+  <%= f.lable :avatar %>
+  <%= f.file_field :avatar %>
   <%= f.label :title %>
   <%= f.text_field :title %><br>
   <%= f.label :artist_name %>
