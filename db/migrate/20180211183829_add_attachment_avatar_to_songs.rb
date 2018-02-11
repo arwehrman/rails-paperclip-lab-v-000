@@ -1,11 +1,11 @@
 class AddAttachmentAvatarToSongs < ActiveRecord::Migration
   def self.up
     change_table :songs do |t|
-      t.attachment :avatar
+      t.attachment :album_cover
     end
   end
 
   def self.down
-    remove_attachment :songs, :avatar
+    remove_attachment :songs, :album_cover
   end
 end
